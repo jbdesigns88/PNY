@@ -181,15 +181,15 @@ body {
 .background-pattern {
   position: absolute;
   z-index: 0;
-  left: -2.5em;
+  left: -4.5em;
   min-width: 540px;
-  top: 0;
-  display: block;
+  top: -2em;
 }
 
 .background-pattern img {
   width: 115%;
-  display: block;
+  min-width: 615px;
+
 }
 
 .previous,
@@ -220,6 +220,10 @@ body {
 @media only screen and (max-width: 1230px) {
   .background-pattern {
     min-width: 200px;
+  }
+
+  .background-pattern img{
+    min-width: 275px;
   }
 
   .end-curve {
