@@ -278,9 +278,13 @@ body {
     align-self: normal;
   }
 
+  .left-content p{
+      padding:0 20px;
+  }
+
   .quote {
     max-width: 80px;
-    left: 10em;
+    left: 12em;
     top: 2em;
   }
 
