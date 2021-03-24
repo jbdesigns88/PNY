@@ -1,0 +1,287 @@
+
+/* resets begin */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* resets end */
+
+body {
+  background-color: rgb(39, 38, 38);
+  font-family: "Inter", sans-serif;
+  font: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#slider {
+  display: flex;
+  position: relative;
+  background-color: white;
+  padding: 6em 8em 8em 0;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.image-holder {
+  position: relative;
+  max-width: 540px;
+  margin-top: 45px;
+  z-index: 1;
+}
+
+.image-holder img.user-image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 15px 20px rgba(4, 4, 104, 0.1);
+}
+
+.right-content {
+  position: relative;
+}
+
+.left-content {
+  align-self: center;
+  z-index: 2;
+}
+
+.left-content p {
+  font-size: 2em;
+  line-height: 1.6em;
+  color: #202046;
+  font-weight: 300;
+}
+
+.information {
+  position: relative;
+  max-width: 658px;
+  left: 5.7em;
+}
+
+.left-content p.employee {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.left-content p.employee span {
+  color: #babacf;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.end-curve {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 610px;
+}
+
+.end-curve img {
+  width: 100%;
+}
+
+.quote {
+  position: relative;
+  left: 6em;
+  top: 2.6em;
+  max-width: 120px;
+}
+.quote img {
+  width: 100%;
+}
+
+.background-pattern {
+  position: absolute;
+  z-index: 0;
+  left: -2.5em;
+  min-width: 540px;
+  top: 0;
+  display: block;
+}
+
+.background-pattern img {
+  width: 115%;
+  display: block;
+}
+
+.previous,
+.next {
+  max-width: 12px;
+  cursor: pointer;
+}
+
+.previous img,
+.next img {
+  width: 100%;
+}
+#button {
+  display: flex;
+  position: relative;
+  bottom: 1.8em;
+  left: 5em;
+  background-color: white;
+  padding: 12px 15px;
+  z-index: 5;
+  border-radius: 3em;
+  box-shadow: none;
+  max-width: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1230px) {
+  .background-pattern {
+    min-width: 200px;
+  }
+
+  .end-curve {
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .left-content p {
+    font-size: 1.6em;
+  }
+
+  .left-content p.employee {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .information {
+    left: 4.8em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #button {
+    margin: 0 auto;
+    left: 0;
+  }
+
+  #slider {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .right-content {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .information {
+    left: 0;
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .left-content p.employee span {
+    margin: 0;
+  }
+
+  .left-content {
+    align-self: normal;
+  }
+
+  .quote {
+    max-width: 80px;
+    left: 10em;
+    top: 2em;
+  }
+
+  .end-curve {
+    position: relative;
+    margin-top: 30px;
+  }
+}
